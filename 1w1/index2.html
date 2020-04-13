@@ -50,15 +50,14 @@
          <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
      Тег audio не поддерживается вашим браузером.  
   </audio>
-  <p dir="rtl"><bdi>שבת</bdi> — суббота</p>   
-  <p>В ашкеназском произношении звучит как «ша́бос» (идиш «ша́бес»),     
-   а в сефардском — как «шаба́т».</p>
+  <p dir="rtl"><bdi>土曜日</bdi> — суббота</p>   
+  <p>Читается как доё:би, do,tsuci означает земля = суббота день земли.</p>
    <script> 
    window.onload = function() {
     var drawingCanvas = document.getElementById('smile');
     if(drawingCanvas && drawingCanvas.getContext) {
      var context = drawingCanvas.getContext('2d');
-     // Рисуем окружность 
+    
      context.strokeStyle = "#000";
      context.fillStyle = "#fc0";
      context.beginPath();
@@ -66,20 +65,20 @@
      context.closePath();
      context.stroke();
      context.fill();
-     // Рисуем левый глаз 
+     
      context.fillStyle = "#fff";
      context.beginPath();
      context.arc(84,90,8,0,Math.PI*2,true);
      context.closePath();
      context.stroke();
      context.fill();
-     // Рисуем правый глаз 
+     
      context.beginPath();
      context.arc(116,90,8,0,Math.PI*2,true);
      context.closePath();
      context.stroke();
      context.fill();
-     // Рисуем рот
+     
      context.beginPath();
      context.moveTo(70,115);
      context.quadraticCurveTo(100,130,130,115);
@@ -95,13 +94,6 @@
   <canvas id="smile" width="200" height="200">
     <p>Ваш браузер не поддерживает рисование.</p>
   </canvas>
-  <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>datalist</title>
- </head>
- <body>
   <p>Выберите язык:</p>
   <p><input list="character">
    <datalist id="character">
